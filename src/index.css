@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'ClashDisplay-Bold';
+    src: url('/ClashDisplay_Complete/Fonts/OTF/ClashDisplay-Bold.otf')
+}
+@font-face {
+    font-family: 'ClashDisplay-Light';
+    src: url('/ClashDisplay_Complete/Fonts/OTF/ClashDisplay-Light.otf')
+}
+@font-face {
+    font-family: 'ClashDisplay-Regular';
+    src: url('/ClashDisplay_Complete/Fonts/OTF/ClashDisplay-Regular.otf')
+}
+@font-face {
+    font-family: 'ClashDisplay-Medium';
+    src: url('/ClashDisplay_Complete/Fonts/OTF/ClashDisplay-Medium.otf')
+}
+
+*{
+    font-family: 'ClashDisplay-Regular', sans-serif;
+    text-transform: capitalize;
+}
+
+.head1{
+    font-family: 'ClashDisplay-Bold', sans-serif;
+}
+.para{
+    font-family: 'ClashDisplay-Light', sans-serif;
+}
+.med{
+    font-family: 'ClashDisplay-Medium', sans-serif;
+}
+
+.btnHover:hover {
+    background-color: #2c2c2c;
+    animation: btnEffect 2s ease-in-out forwards;
+}
+@keyframes btnEffect {
+    50%{
+        border-radius: 50%;
+    }
+    100%{
+        border-radius: 100%;
+    }
+}
